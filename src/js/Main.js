@@ -1,11 +1,8 @@
-//console.log("Testando webpack");
-import Mamiferos from './Mamiferos';
+import Cachorro from './Cachorro';
+import Gato from './Gato';
 
-var cachorro = new Mamiferos();
-cachorro.voz = "latido";
-var gato = new Mamiferos();
-gato.voz = "miado";
+var bingo = new Cachorro();
+var felix = new Gato();
 
-console.log(cachorro.voz);
-console.log(gato.corDoOlho);
-console.log(gato.voz);
+bingo.falar();
+felix.falar();
