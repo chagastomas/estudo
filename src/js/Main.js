@@ -1,8 +1,26 @@
-import Cachorro from './Cachorro';
-import Gato from './Gato';
+import Botao from './Botao';
+import SuperBotao from './SuperBotao';
 
-var bingo = new Cachorro();
-var felix = new Gato();
+window.onload = () => {
+    var bt = new Botao();
+    var superbt = new SuperBotao();
 
-bingo.falar();
-felix.falar();
+    bt.addText("Clique aqui");
+    superbt.addText("Super BT");
+    superbt.addEvents();
+
+    document.body.appendChild(bt.view);
+    document.body.appendChild(superbt.view);
+}
+
+
+
+
+// import Cachorro from './Cachorro';
+// import Gato from './Gato';
+//
+// var bingo = new Cachorro();
+// var felix = new Gato();
+//
+// bingo.falar();
+// felix.falar();
